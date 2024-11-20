@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Comments, Attributes, and Links</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jarif Ullah"> 
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <h1>Comments, Attributes, and Links</h1>
+
+    <h2>Comments (Visible on Page)</h2>
+
+    <!-- Comments are displayed as text below -->
+    <pre><code>&lt;!-- this is a single line comment --&gt;</code></pre>
+    <pre><code>&lt;!-- this is a multiple line comment --&gt;</code></pre>
+    <pre><code>&lt;!-- you can disable elements &lt;h1&gt; Hello World &lt;/h1&gt; by enclosing them in a comment --&gt;</code></pre>
+
+    <h2>Attributes</h2>
+    <p>Attributes are codes that appear within a tag that modify it in some way. The general syntax for an attribute is:</p>
+    <pre><code>&lt;tagName attributeName="value"&gt;content&lt;/tagName&gt;</code></pre>
+
+    <p>Example of an image tag with a source attribute:</p>
+    <img src="happyface.jpg" alt="Smiley Face">
+
+    <p>Example of a paragraph with a style attribute:</p>
+    <p style="color:red">This paragraph will have red text</p>
+
+    <h2>Links</h2>
+    <p>The &lt;a&gt; tag is used to create links:</p>
+    <pre><code>&lt;a href="pathToFile"&gt;LinkText&lt;/a&gt;</code></pre>
+
+    <p>More link attributes:</p>
+    <ul>
+      <li><b>Download:</b> Lets the user download a file</li>
+      <li><b>Target:</b> Specifies a specific place within the page where the link opens</li>
+    </ul>
+
+    <p>Some common targets:</p>
+    <ul>
+      <li><b>_blank:</b> Opens in a new window/tab</li>
+      <li><b>_top:</b> Opens at the top of the page</li>
+      <li><b>_self:</b> Opens within the same iframe</li>
+      <li><b>_parent:</b> Opens within the parent of the current frame</li>
+    </ul>
+
+    <p>Example of a link with a target attribute:</p>
+    <pre><code>&lt;a href="URL" target="_blank"&gt;Click to open in a new tab&lt;/a&gt;</code></pre>
+
+    <h2>Embedding Images</h2>
+    <p>To embed an image, you can use the &lt;img&gt; tag with the src and alt attributes:</p>
+    <pre><code>&lt;img src="happyface.jpg" alt="Smiley Face"&gt;</code></pre>
+
+    <p>Example of embedding an image from an external URL:</p>
+    <pre><code>&lt;img src="https://ex.com/hf.jpg" alt="Smiley Face"&gt;</code></pre>
+
+    <h2>Sizing Images</h2>
+    <p>You can set the width of an image using the width attribute:</p>
+    <pre><code>&lt;img src="file" width="200"&gt;</code></pre>
+
+  </body>
+</html>
