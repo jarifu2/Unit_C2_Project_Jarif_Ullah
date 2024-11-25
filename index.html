@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Introduction To HTML</title>
+    <title>Comments, Attributes, and Links</title>
     <meta charset="UTF-8">
-    <meta name="author" content="Jarif Ullah"> 
+    <meta name="author" content="Jarif Ullah">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <hr>
-      <a href="/page2.html">Basic HTML Code</a>
-      <hr>
-      <a href="/page3.html">Types Of Body Elements</a>
-      <hr>
-      <a href="/page4.html">Formatting Tags</a>
-      <hr>
-      <a href="/page5.html">Comments, Attributes, and Links</a>
-      <hr>
-      <a href="/page6.html">Headings & Paragraphs</a>
-      <hr>
-      <a href="/page7.html">Iframes</a>
-      <hr>
-      <a href="/page8.html">What's In The Head Elements</a>
-      <hr>
-      <a href="/page9.html">Tables</a>
-      <hr>
-      <a href="/page10.html">Charset</a>
-      <hr>
-      <a href="/page11.html">File Paths</a>
-      <hr>
-      <a href="/page12.html">W3C Validator</a>
-      <hr>
-    </nav>
-    <main>
-      <h1>Introduction to HTML</h1>
-      <p>This is the home page. Navigate through the different pages to learn more about HTML.</p>
-    </main>
+    <h1>Comments, Attributes, and Links</h1>
+
+    <h2>How to Embed Images</h2>
+    <p>To embed an image, use the <code>&lt;img&gt;</code> tag with a <code>src</code> attribute to specify the file's path:</p>
+    <pre><code>&lt;img src="path-to-image.jpg" alt="Description of Image"&gt;</code></pre>
+
+    <h3>Example 1: Using a Local Image</h3>
+    <p>Place the image file in the same folder as this HTML file. For example, if your image is named <code>example.jpg</code>, the code would look like:</p>
+    <pre><code>&lt;img src="example.jpg" alt="An example image"&gt;</code></pre>
+    <p>(If there’s no local image, this won’t display anything.)</p>
+    <img src="example.jpg" alt="An example image">
+
+    <h3>Example 2: Using an External Image URL</h3>
+    <p>You can also use an external URL as the <code>src</code> attribute:</p>
+    <pre><code>&lt;img src="https://via.placeholder.com/150" alt="Placeholder Image"&gt;</code></pre>
+    <p>This example uses a placeholder image:</p>
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+
+    <h3>Example 3: Resizing an Image</h3>
+    <p>You can resize an image using the <code>width</code> and <code>height</code> attributes:</p>
+    <pre><code>&lt;img src="https://via.placeholder.com/150" alt="Resized Image" width="100"&gt;</code></pre>
+    <p>Resized version of the placeholder:</p>
+    <img src="https://via.placeholder.com/150" alt="Resized Image" width="100">
+
   </body>
 </html>
+
+
+
