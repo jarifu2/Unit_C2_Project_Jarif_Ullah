@@ -3,7 +3,7 @@
   <head>
     <title>Comments, Attributes, and Links</title>
     <meta charset="UTF-8">
-    <meta name="author" content="Jarif Ullah"> 
+    <meta name="author" content="Jarif Ullah">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="script.js"></script>
@@ -12,7 +12,6 @@
     <h1>Comments, Attributes, and Links</h1>
 
     <h2>Comments (Visible on Page)</h2>
-
     <!-- Comments are displayed as text below -->
     <pre><code>&lt;!-- this is a single line comment --&gt;</code></pre>
     <pre><code>&lt;!-- this is a multiple line comment --&gt;</code></pre>
@@ -23,10 +22,11 @@
     <pre><code>&lt;tagName attributeName="value"&gt;content&lt;/tagName&gt;</code></pre>
 
     <p>Example of an image tag with a source attribute:</p>
+    <!-- Ensure the correct path to the image file -->
     <img src="happyface.jpg" alt="Smiley Face">
 
     <p>Example of a paragraph with a style attribute:</p>
-    <p style="colored">This paragraph will have red text</p>
+    <p style="color: red;">This paragraph will have red text.</p>
 
     <h2>Links</h2>
     <p>The &lt;a&gt; tag is used to create links:</p>
@@ -54,11 +54,14 @@
     <pre><code>&lt;img src="happyface.jpg" alt="Smiley Face"&gt;</code></pre>
 
     <p>Example of embedding an image from an external URL:</p>
-    <pre><code>&lt;img src="https://ex.com/hf.jpg" alt="Smiley Face"&gt;</code></pre>
+    <pre><code>&lt;img src="https://example.com/hf.jpg" alt="Smiley Face"&gt;</code></pre>
+    <img src="https://example.com/hf.jpg" alt="Example Smiley Face">
 
     <h2>Sizing Images</h2>
     <p>You can set the width of an image using the width attribute:</p>
-    <pre><code>&lt;img src="file" width="200"&gt;</code></pre>
+    <pre><code>&lt;img src="file.jpg" width="200"&gt;</code></pre>
+    <img src="happyface.jpg" width="200" alt="Smiley Face">
 
   </body>
 </html>
+
