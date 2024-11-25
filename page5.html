@@ -1,75 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Comments, Attributes, and Links</title>
-    <meta charset="UTF-8">
-    <meta name="author" content="Jarif Ullah">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <h1>Comments, Attributes, and Links</h1>
+<head>
+   <title>Comments, Attributes, Links, and Iframes</title>
+   <meta charset="UTF-8">
+   <meta name="author" content="Jarif Ullah">
+   <meta name="viewport" content="width=device-width">
+   <link rel="stylesheet" href="styles.css">
+   <script type="module" src="script.js"></script>
+</head>
+<body>
+   <h1>Comments, Attributes, Links, and Iframes</h1>
 
-    <!-- Comments Section -->
-    <h2>Comments (Visible on Page)</h2>
-    <!-- Comments are displayed as text below -->
-    <pre><code>&lt;!-- this is a single line comment --&gt;</code></pre>
-    <pre><code>&lt;!-- this is a multiple line comment --&gt;</code></pre>
-    <pre><code>&lt;!-- you can disable elements &lt;h1&gt; Hello World &lt;/h1&gt; by enclosing them in a comment --&gt;</code></pre>
+   <!-- Comments Section -->
+   <h2>Comments</h2>
+   <p>Comments are not displayed on the page but help developers document their code. Examples:</p>
+   <pre><code>&lt;!-- This is a single-line comment --&gt;</code></pre>
+   <pre><code>&lt;!--
+This is a 
+multi-line comment
+--&gt;</code></pre>
+   <pre><code>&lt;!-- You can also comment out elements: &lt;h1&gt;Hello World&lt;/h1&gt; --&gt;</code></pre>
 
-    <!-- Attributes Section -->
-    <h2>Attributes</h2>
-    <p>Attributes are codes that appear within a tag that modify it in some way. The general syntax for an attribute is:</p>
-    <pre><code>&lt;tagName attributeName="value"&gt;content&lt;/tagName&gt;</code></pre>
+   <!-- Attributes Section -->
+   <h2>Attributes</h2>
+   <p>Attributes are used to modify HTML elements. The syntax is:</p>
+   <pre><code>&lt;tagName attributeName="value"&gt;content&lt;/tagName&gt;</code></pre>
 
-    <p>Example of an image tag with a source attribute:</p>
-    <!-- Ensure the correct path to the image file -->
-    <img src="happyface.jpg" alt="Smiley Face">
+   <p>Example with an image tag:</p>
+   <img src="happyface.jpg" alt="Smiley Face">
 
-    <p>Example of a paragraph with a style attribute:</p>
-    <p style="color: red;">This paragraph will have red text.</p>
+   <p>Example with a paragraph styled inline:</p>
+   <p style="color: red;">This paragraph has red text.</p>
 
-    <!-- Links Section -->
-    <h2>Links</h2>
-    <p>The &lt;a&gt; tag is used to create links:</p>
-    <pre><code>&lt;a href="pathToFile"&gt;LinkText&lt;/a&gt;</code></pre>
+   <!-- Links Section -->
+   <h2>Links</h2>
+   <p>The &lt;a&gt; tag is used to create hyperlinks. Example syntax:</p>
+   <pre><code>&lt;a href="pathToFile"&gt;LinkText&lt;/a&gt;</code></pre>
 
-    <p>More link attributes:</p>
-    <ul>
-      <li><b>Download:</b> Lets the user download a file</li>
-      <li><b>Target:</b> Specifies a specific place within the page where the link opens</li>
-    </ul>
+   <p>Common link attributes include:</p>
+   <ul>
+      <li><b>Download:</b> Allows users to download a file.</li>
+      <li><b>Target:</b> Specifies where the link will open (e.g., <code>_blank</code> for a new tab).</li>
+   </ul>
 
-    <p>Some common targets:</p>
-    <ul>
-      <li><b>_blank:</b> Opens in a new window/tab</li>
-      <li><b>_top:</b> Opens at the top of the page</li>
-      <li><b>_self:</b> Opens within the same iframe</li>
-      <li><b>_parent:</b> Opens within the parent of the current frame</li>
-    </ul>
+   <!-- Embedding Images Section -->
+   <h2>Embedding Images</h2>
+   <p>To embed images, use the &lt;img&gt; tag:</p>
+   <pre><code>&lt;img src="happyface.jpg" alt="Smiley Face"&gt;</code></pre>
+   <p>You can also set dimensions:</p>
+   <pre><code>&lt;img src="file.jpg" width="200"&gt;</code></pre>
 
-    <p>Example of a link with a target attribute:</p>
-    <pre><code>&lt;a href="URL" target="_blank"&gt;Click to open in a new tab&lt;/a&gt;</code></pre>
+   <!-- Iframes Section -->
+   <h2>Iframes</h2>
+   <p>An iframe is used to embed another HTML document or webpage within the current page. Basic syntax:</p>
+   <pre><code>&lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;</code></pre>
 
-    <!-- Embedding Images Section -->
-    <h2>Embedding Images</h2>
-    <p>To embed an image, you can use the &lt;img&gt; tag with the src and alt attributes:</p>
-    <pre><code>&lt;img src="happyface.jpg" alt="Smiley Face"&gt;</code></pre>
+   <p>Example with dimensions:</p>
+   <iframe src="https://example.com" title="Example Site" height="400" style="width: 40%;"></iframe>
 
-    <p>Example of embedding an image from an external URL:</p>
-    <pre><code>&lt;img src="https://example.com/hf.jpg" alt="Smiley Face"&gt;</code></pre>
-    <!-- External Image Example -->
-    <img src="https://example.com/hf.jpg" alt="Smiley Face Example">
+   <p>You can also include fallback content for browsers that don’t support iframes:</p>
+   <pre><code>
+&lt;iframe src="https://example.com" title="Example"&gt;
+    Your browser does not support iframes.
+&lt;/iframe&gt;
+   </code></pre>
 
-    <!-- Sizing Images Section -->
-    <h2>Sizing Images</h2>
-    <p>You can set the width of an image using the width attribute:</p>
-    <pre><code>&lt;img src="file.jpg" width="200"&gt;</code></pre>
-    <!-- Local Image Example -->
-    <img src="happyface.jpg" width="200" alt="Smiley Face">
+   <p>For improved security, consider using the <code>sandbox</code> attribute or lazy loading:</p>
+   <pre><code>&lt;iframe src="https://example.com" title="Example" sandbox="allow-scripts" loading="lazy"&gt;&lt;/iframe&gt;</code></pre>
 
-  </body>
+   <!-- Sizing Images Section -->
+   <h2>Sizing Images</h2>
+   <p>Use attributes like <code>width</code> and <code>height</code> to set image dimensions:</p>
+   <img src="happyface.jpg" width="200" alt="Smiley Face">
+
+</body>
 </html>
-
 
