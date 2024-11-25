@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Formatting Tags</title>
+    <title>HTML Tables</title>
     <meta charset="UTF-8">
-    <meta name="author" content="Jarif Ullah"> 
+    <meta name="author" content="Jarif Ullah">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <h1>Formatting Tags</h1>
-    &lt;strong&gt; - <strong>makes text bold</strong>
-    <br>
-    &lt;html&gt; - Root element of the HTML document. <br>
-    &lt;head&gt; - Contains metadata about the HTML document like title, character, and author <br>
-    &lt;title&gt; - Gives the specific title of the HTML page, which is then displayed in the browser tab. <br>
-    &lt;/head&gt; <br>
-    &lt;body&gt; - Contains the content of the HTML document that is seen. <br>
-    &lt;h2&gt; - Distinguishes the heading and is typically used for subheadings in a page. <br>
-    &lt;p&gt; - Represents a paragraph. <br>
-    &lt;/html&gt; - Signifies the end of the body and HTML document. <br>
-    
-    <h2>List Elements</h2>
-    <p>There are two types of list tags:</p>
+    <h1>Creating Tables in HTML</h1>
+
+    <p>To create a table, use the <code>&lt;table&gt;</code> tag. Inside the <code>&lt;table&gt;</code>, you can define rows with <code>&lt;tr&gt;</code>, table headings with <code>&lt;th&gt;</code>, and table data with <code>&lt;td&gt;</code>.</p>
+
+    <h2>Table Structure</h2>
+    <p>How to do it:</p>
     <ul>
-      <li>&lt;ol&gt; creates an ordered list (numbers)</li>
-      <li>&lt;ul&gt; creates an unordered list (bullets)</li>
+      <li><code>&lt;table&gt;</code> - defines the table element.</li>
+      <li><code>&lt;tr&gt;</code> - defines the rows in table .</li>
+      <li><code>&lt;th&gt;</code> - defines the table heading.</li>
+      <li><code>&lt;td&gt;</code> - defines a table data cell (content).</li>
     </ul>
-    <p>Both list types use &lt;li&gt; (list item) for the items within the lists.</p>
-    <p><code>&lt;ol&gt;, &lt;ul&gt;,</code> and <code>&lt;li&gt;</code> are block-level elements.</p>
-    
-    <h3>Examples of Ordered and Unordered Lists</h3>
-    <h4>Ordered List:</h4>
-    <ol>
-      <li>list</li>
-      <li>is</li>
-      <li>numbered</li>
-    </ol>
-    
-    <h4>Unordered List:</h4>
-    <ul>
-      <li>list</li>
-      <li>has</li>
-      <li>bullets</li>
-    </ul>
+
+      <h2>Table Styling</h2>
+    <p>You can also style tables with CSS. For example, you can add borders, padding, or change the background color of the table rows. Below is an example of styling the table:</p>
+    <pre><code>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+    </code></pre>
   </body>
 </html>
+
